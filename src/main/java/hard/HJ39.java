@@ -75,7 +75,7 @@ public class HJ39{
         String[] ip2Array = ip2.split("\\.");
 
         for(int i=0; i<4; i++){
-            if((Integer.parseInt(maskArray[i]) & Integer.parseInt(ip1Array[i])) != (Integer.parseInt(maskArray[i])&Integer.parseInt(ip2Array[i]))){
+            if((Integer.parseInt(maskArray[i]) & Integer.parseInt(ip1Array[i])) != (Integer.parseInt(maskArray[i]) & Integer.parseInt(ip2Array[i]))){
                 return false;
             }
         }
